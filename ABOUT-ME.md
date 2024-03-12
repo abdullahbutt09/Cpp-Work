@@ -8,4 +8,4 @@
 
 🤓 Any coding question or problem to solve drop me a mail on: abdullah.business4564@gmail.com i will try my best to respond ASAP. Good luck to all coders.
 
-⚡ Quote: "Mitakes are proof you are trying".
+⚡ Quote: "Mitakes are Proofs you are Trying".
