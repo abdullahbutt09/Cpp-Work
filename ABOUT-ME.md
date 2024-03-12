@@ -4,7 +4,7 @@
 
 🌱 I’m currently learning C++ and javascript.
 
-💞️ I’m looking to collaborate with different types of coders to enhance my knowledge and logic.
+💞️ I’m looking to collaborate with different types of coders to enhance my Knowledge and Logic.
 
 🤓 Any coding question or problem to solve drop me a mail on: abdullah.business4564@gmail.com i will try my best to respond ASAP. Good luck to all coders.
 
