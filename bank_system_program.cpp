@@ -86,6 +86,15 @@ void bank_function()
   cout << "Enter your choice :: ";
   cin >> choice;
 
+  while (choice != 1 && choice != 2 && choice != 3 && choice != 4)
+  {
+    cout << endl;
+    cout << "Invalid choice!" << endl;
+    cout << endl;
+    cout << "Enter your choice between 1 , 2 , 3 , 4 :: ";
+    cin >> choice;
+  }
+
   if (choice == 1)
   {
     cout << "Your current balance is :: " << current_balance << endl;
