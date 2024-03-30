@@ -9,17 +9,19 @@ int main()
     char choice1;
     char choice2;
     char choice3;
-    int score;
+    int score = 0;
+
     cout << endl;
-    cout << "WELCOME TO THE QUIZ GAME OF C++ THIS GAME QUIZ INCLUDE SOME BASIC QUESTIONS OF C++" << endl;
+    cout << "-----> WELCOME TO THE QUIZ GAME OF C++ <-----" << endl;
     cout << endl;
 
-    cout << "PRESS R OR r TO CHECK THE RULES OF THE GAME :: ";
+    cout << "PRESS CAPITAL R OR SMALL r TO CHECK THE RULES OF THE GAME :: ";
     cin >> choice1;
 
     while (choice1 != 'r' && choice1 != 'R')
     {
-        cout << "PLEASE PRESS CAPITAL R TO SMALL r TO CHECK THE RULES OF THE GAME! :: ";
+        cout << endl;
+        cout << "KINDLY PRESS CAPITAL R OR SMALL r TO CHECK THE RULES OF THE GAME :: ";
         cin >> choice1;
     }
 
@@ -28,18 +30,19 @@ int main()
         rules();
     }
 
-    cout << "PRESS AND TYPE S OR s TO START THE GAME :: ";
+    cout << "PRESS CAPITAL S OR SMALL s TO START THE GAME :: ";
     cin >> choice2;
+    cout << endl;
 
     while (choice2 != 's' && choice2 != 'S')
     {
-        cout << "PLEASE PRESS CAPITAL S TO SMALL s TO START THE GAME! :: ";
+        cout << "KINDLY PRESS CAPITAL S OR SMALL s TO START THE GAME :: ";
         cin >> choice2;
+        cout << endl;
     }
 
     if (choice2 == 's' || choice2 == 'S')
     {
-        cout << endl;
         cout << "ENTER YOUR NAME :: ";
         cin >> name;
         score = questions();
@@ -48,48 +51,44 @@ int main()
     if (score >= 5)
     {
         cout << name << " YOUR SCORE IS " << score << endl;
-        cout << endl;
         cout << name << " CONGRATULATIONS YOU HAVE PASSED THE QUIZ" << endl;
-        cout << endl;
     }
-
-    else if (score <= 0 || score <= 4)
+    else
     {
         cout << name << " YOUR SCORE IS " << score << endl;
-        cout << endl;
         cout << name << " YOU HAVE FAILED THE QUIZ" << endl;
-        cout << endl;
     }
 
     cout << name << " DO YOU WANT TO PLAY THE QUIZ GAME AGAIN ?" << endl;
-    cout << endl;
-    cout << "PRESS AND TYPE Y OR y TO START THE QUIZ AGAIN!" << endl;
-    cout << endl;
-    cout << "PRESS AND TYPE N OR n TO EXIT FROM THE GAME!" << endl;
-    cout << endl;
-    cout << name << " NOW TYPE YOUR CHOICE :: ";
+    cout << "PRESS Y TO START THE QUIZ AGAIN!" << endl;
+    cout << "PRESS N TO EXIT FROM THE GAME!" << endl;
+    cout << "NOW TYPE YOUR CHOICE :: ";
     cin >> choice3;
-    cout << endl;
 
-    while (choice3 != 'n' && choice3 != 'N' && choice3 != 'y' && choice3 != 'Y')
+    while (choice3 == 'Y' || choice3 == 'y')
     {
-        cout << name << " PLEASE PRESS CAPITAL N OR SMALL n | CAPITAL Y OR SMALL Y TO PROCEED :: ";
+        rules();
+        score = questions();
+
+        if (score >= 5)
+        {
+            cout << name << " YOUR SCORE IS " << score << endl;
+            cout << name << " CONGRATULATIONS YOU HAVE PASSED THE QUIZ" << endl;
+        }
+        else
+        {
+            cout << name << " YOUR SCORE IS " << score << endl;
+            cout << name << " YOU HAVE FAILED THE QUIZ" << endl;
+        }
+
+        cout << name << " DO YOU WANT TO PLAY THE QUIZ GAME AGAIN ?" << endl;
+        cout << "PRESS Y TO START THE QUIZ AGAIN!" << endl;
+        cout << "PRESS N TO EXIT FROM THE GAME!" << endl;
         cin >> choice3;
     }
 
-    if (choice3 == 'N' || choice3 == 'n')
-    {
-        cout << endl;
-        cout << "THANKS FOR PLAYING THE GAME " << name << endl;
-        cout << endl;
-        cout << name << " YOUR LAST QUIZ SCORE IS :: " << score << endl;
-        cout << endl;
-    }
-    else if (choice3 == 'Y' || choice3 == 'y')
-    {
-        rules();
-        questions();
-    }
+    cout << "THANKS FOR PLAYING THE GAME " << name << endl;
+    cout << "YOUR LAST QUIZ SCORE IS :: " << score << endl;
 
     return 0;
 }
@@ -97,13 +96,13 @@ int main()
 void rules()
 {
     cout << endl;
-    cout << "----> GAME INCLUDE 10 QUESTIONS <----" << endl;
+    cout << "----> GAME INCLUDE 10 QUESTIONS! <----" << endl;
     cout << endl;
-    cout << "YOU HAVE TO SCORE ATLEAST 5 POINTS OR GREARTER THEN 5 POINTS TO PASS THE QUIZ" << endl;
+    cout << "YOU HAVE TO SCORE ATLEAST 5 POINTS OR GREARTER THEN 5 POINTS TO PASS THE QUIZ!" << endl;
     cout << endl;
-    cout << "THERE WILL BE 4 OPTIONS A,B,C,D" << endl;
+    cout << "THERE WILL BE 4 OPTIONS A,B,C,D!" << endl;
     cout << endl;
-    cout << "YOU HAVE TO SELECT ONE OPTION FROM THEM BY JUST TYPING A,B,C,D | a,b,c,d EITHER CAPITAL OR SMALL" << endl;
+    cout << "YOU HAVE TO SELECT ONE OPTION FROM THEM BY JUST TYPING A,B,C,D | a,b,c,d EITHER CAPITAL OR SMALL!" << endl;
     cout << endl;
 }
 
