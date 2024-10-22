@@ -118,7 +118,7 @@ int main()
     cout << "WATCH STOPPED AT -> " << "|" << "H:" << hours << " M:" << minutes << " S:" << seconds - 1<< "|" << '\n';
 
     return 0;
-}+
+}
 
 /*
     why seconds - 1?
