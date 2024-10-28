@@ -1,4 +1,4 @@
-//This is pascal triangle!
+//This is pascal triangle 😎!
 #include <iostream>
 using namespace std;
 int main()
